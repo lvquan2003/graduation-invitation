@@ -1,0 +1,18 @@
+[
+  { "name": "Diệu Anh", "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425952/phu7.jpg" },
+  { "name": "Bình An",  "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425281/phu1.jpg" },
+  { "name": "Hoàng Hoa",  "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425280/phu2.jpg" },
+  { "name": "Loyu",  "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425279/phu6.jpg" },
+  { "name": "Kim Chi",  "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425279/phu5.jpg" },
+  { "name": "Liên Anh",  "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425279/phu5.jpg" },
+  { "name": "Bình An",  "photo": "" },
+  { "name": ["Quỳnh Hoa", "Linh Chi"], "photo": "https://res.cloudinary.com/fulahwzr/image/upload/c_limit,w_900,q_auto,f_auto/v1793425279/phu3.jpg" },
+  {
+    "name": [
+      "chị Nhi",
+      "Thu Huyền",
+      "Trúc Xuân"
+    ],
+    "photo": "https://res.cloudinary.com/fulahwzr/image/upload/v1793425279/phu4.jpg"
+  }
+]
