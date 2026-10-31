@@ -35,6 +35,7 @@ export default function Invitation({ guest: first = { name: "" } }) {
   }, []);
   const [stage, setStage] = useState(0); // 0 đóng, 1 đang mở, 2 xong
   const words = c.name.split(" ");
+  const vip = /^chị nhi/i.test((guest.name || "").normalize("NFC"));
   const audioRef = useRef(null);
   const [music, setMusic] = useState("idle"); // idle | on | off | none
 
@@ -93,7 +94,7 @@ export default function Invitation({ guest: first = { name: "" } }) {
             <div className="env-back" />
             <div className="env-letter">
               <b className="cn a">✦</b><b className="cn b">✦</b><b className="cn c">✦</b><b className="cn d">✦</b>
-              <small>{guest.name ? "Gửi bạn" : "Thiệp mời"}</small>
+              <small>{guest.name ? (vip ? "Thân gửi" : "Gửi bạn") : "Thiệp mời"}</small>
               {guest.name ? (
   <span className="gn" style={{ fontSize: `${nameSize(guest.name)}rem` }}>
     {splitNames(guest.name).map((t, i) => <b key={i}>{t}</b>)}
@@ -117,7 +118,7 @@ export default function Invitation({ guest: first = { name: "" } }) {
           <Flower className="fl fl-a" />
           <Sparkle className="dec" style={{ top: 10, right: "4%", width: 26 }} />
           <div className="navy-card reveal">
-            <p className="small">{fill(c.intro, guest.name)}</p>
+            <p className="small">{vip ? "Trân trọng kính mời chị/bạn đến dự lễ tốt nghiệp của" : fill(c.intro, guest.name)}</p>
             {words.map((w, i) => <h2 key={i} className="script nm">{w}</h2>)}
           </div>
         </section>
